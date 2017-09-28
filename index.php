@@ -1,13 +1,7 @@
 <?php
-require 'functions.php';
 
-$task = [
+$query = require 'bootstrap.php';
 
-    'name' => 'khvicha',
-    'age' =>'23',
-    'job' =>'web developer',
-    'loves_job' => true
-];
+$tasks = $query->selectAll('todos');
 
-dd($task);
- require 'index.view.php';
+require 'index.view.php';
