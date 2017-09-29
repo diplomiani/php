@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>php</title>
-</head>
-<body>
+<?php require 'partials/head.php'; ?>
     <ul>
         <?php foreach ($tasks as $task): ?>
             <li>
@@ -15,5 +10,4 @@
             </li>
         <?php endforeach ?>
     </ul>
-</body>
-</html>
+<?php require 'partials/footer.php'; ?>
